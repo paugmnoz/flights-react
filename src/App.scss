@@ -9,8 +9,12 @@
     font-family: "DM Sans", sans-serif;
 }
 
+body {
+    background-color: $gray_01;
+
+}
+
 .App {
-    background-color: $dark_blue;
     h1 {
         font-size: 40;
         font-weight: 400;

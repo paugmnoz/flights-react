@@ -1,11 +1,13 @@
-export default function Header () {
+export default function Header() {
     return (
-      <div className="home_header">
-        <span>
-            <h1>Flight tracker </h1>
-            <img src = "../assets/airplane-white.svg" alt="airplane white"/>
-        </span>
-        <p>Select an airport to check all scheduled flights</p>
-      </div>
+        <div className="home_header">
+            <p>Select an airport to check all scheduled flights</p>
+            <span>
+                <h1>Flight tracker </h1>
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36.631 18.6875C36.3867 18.6875 35.3337 18.6947 34.9537 18.7154L29.7634 18.8519L17.7944 4.3125H12.1513L18.8528 19.1017L10.1101 19.2311L6.13178 14.375H1.45002L3.3017 22.8365C3.31518 22.885 3.33135 22.9326 3.34932 22.9793C3.35064 22.9837 3.35064 22.9884 3.34932 22.9928C3.3309 23.0392 3.315 23.0866 3.3017 23.1348L1.42487 31.625H6.07697L10.1604 26.6836L18.8546 26.8786L12.1504 41.6875H17.8106L29.7598 27.1553L34.9501 27.2936C35.3355 27.3143 36.3876 27.3215 36.6265 27.3215C38.8142 27.3215 40.6039 27.0214 41.9462 26.4284C44.2228 25.4258 44.5624 23.8499 44.5624 23C44.5624 20.2993 41.5976 18.6875 36.631 18.6875Z" fill="white" />
+                </svg>
+            </span>
+        </div>
     )
-  }
+}

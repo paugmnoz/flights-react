@@ -1,7 +1,23 @@
 .home_header {
   background-color: #131633;
   color: #ffffff;
+  width: 100vw;
   height: 200px;
+  padding: 0px 40px 40px 40px;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 0 0 10px 10px;
+}
+.home_header span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 12px 0;
+}
+.home_header span svg {
+  width: auto;
+  height: 30px;
+  margin: 0 8px;
 }
 .home_header p {
   color: #8C85B4;

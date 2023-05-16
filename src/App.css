@@ -6,9 +6,10 @@
   font-family: "DM Sans", sans-serif;
 }
 
-.App {
-  background-color: #131633;
+body {
+  background-color: #FBFBFB;
 }
+
 .App h1 {
   font-size: 40;
   font-weight: 400;

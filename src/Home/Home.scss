@@ -2,8 +2,25 @@
 .home_header{
     background-color: $dark_blue;
     color: $white;
+    width: 100vw;
     height: 200px;
+    padding: 0px 40px 40px 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 0 0 10px 10px;
+    span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 0 12px 0;
+        svg {
+            width: auto;
+            height: 30px;
+            margin: 0 8px;
+        }
+    }
     p {
         color: $light_blue_02;
     }
+
 }
