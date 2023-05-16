@@ -1,5 +1,7 @@
 import React from 'react';
 import DepartureItem from './DepartureItem';
+import './Home.css';
+
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -10,8 +12,6 @@ export default class Home extends React.Component {
     }
 
     render() {
-        { console.log('data' + this.state.data.map((flight) => flight.departure.airport)) }
-
         return (
             <div>
                 <h1>Welcome to Track your flight</h1>
@@ -26,7 +26,6 @@ export default class Home extends React.Component {
                                 terminal={flight.departure.terminal}
                                 gate={flight.departure.gate}
                                 arrival_date={flight.arrival.estimated}
-
                             ></DepartureItem>
                         })
                     }

@@ -7,11 +7,10 @@ export default function DepartureItem({
   arriving_to,
   arrival_date
 }) {
-    return (
-      <div>
-      
-        vuelo número  {flight_number} llegando a
-        {arriving_to}
-        </div>
-    )
-  }
+  return (
+    <div>
+      vuelo número  {flight_number} llegando a
+      {arriving_to}
+    </div>
+  )
+}
