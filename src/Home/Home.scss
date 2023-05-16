@@ -32,9 +32,24 @@
         display: flex;
         flex-direction: row;
         margin: 16px 0 24px 0;
+        align-items: center;
+        .css-b62m3t-container{
+            width: 300px;
+        }
 
         p {
             color: $gray_03;
+            margin: 0 18px;
+        }
+        .iata_input {
+            border: 1px solid $light_blue_01;
+            border-radius: 4px;
+            padding: auto 18px;
+            font-size: 16px;
+            height: 38px;
+            text-align: center;
+            width: 100px;
+
         }
     }
 }

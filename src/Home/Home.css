@@ -32,9 +32,23 @@
   display: flex;
   flex-direction: row;
   margin: 16px 0 24px 0;
+  align-items: center;
+}
+.home_content .search_bar .css-b62m3t-container {
+  width: 300px;
 }
 .home_content .search_bar p {
   color: #617182;
+  margin: 0 18px;
+}
+.home_content .search_bar .iata_input {
+  border: 1px solid #DFE4FB;
+  border-radius: 4px;
+  padding: auto 18px;
+  font-size: 16px;
+  height: 38px;
+  text-align: center;
+  width: 100px;
 }
 
 ul {
