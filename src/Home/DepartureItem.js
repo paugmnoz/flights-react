@@ -8,9 +8,14 @@ export default function DepartureItem({
   arrival_date
 }) {
   return (
-    <div>
-      vuelo número  {flight_number} llegando a
-      {arriving_to}
-    </div>
+    <li className="departureItem">
+      <p>{depart_date}</p>
+      <p>{flight_number}</p>
+      <p>{flight_status}</p>
+      <p>{terminal}</p>
+      <p>{gate}</p>
+      <p>{arriving_to}</p>
+      <p>{arrival_date}</p>
+    </li>
   )
 }

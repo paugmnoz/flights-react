@@ -1,14 +1,13 @@
 @import "../variables.scss";
-.home_header{
+.home_header {
     background-color: $dark_blue;
     color: $white;
-    width: 100vw;
     height: 200px;
     padding: 0px 40px 40px 40px;
     display: flex;
     flex-direction: column-reverse;
     border-radius: 0 0 10px 10px;
-    span{
+    span {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -22,5 +21,94 @@
     p {
         color: $light_blue_02;
     }
+}
 
+.home_content {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 20px 40px 0 40px;
+
+    .search_bar {
+        display: flex;
+        flex-direction: row;
+        margin: 16px 0 24px 0;
+
+        p {
+            color: $gray_03;
+        }
+    }
+}
+ul {
+    width: 80%;
+    border-radius: 6px;
+    overflow: hidden;
+    .listHeader {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 14px 28px;
+        border: 1px solid $light_blue_01;
+        background-color: $light_blue_01;
+        p {
+            min-width: 50px;
+            width: 100px;
+            text-align: center;
+
+            &:nth-child(1) {
+                text-align: left;
+            }
+            &:nth-child(4),
+            &:nth-child(5) {
+                width: 60px;
+            }
+            &:nth-child(6) {
+                width: 300px;
+            }
+            &:nth-child(7) {
+                width: 250px;
+                text-align: right;
+            }
+        }
+    }
+    .departureItem {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 14px 28px;
+        border: 1px solid $light_blue_01;
+        background-color: $white;
+        &:hover {
+            cursor: default;
+            background-color: $light_blue_03;
+        }
+        p {
+            min-width: 50px;
+            width: 100px;
+            text-align: center;
+            color: $gray_03;
+            font-size: 14px;
+            &:nth-child(1) {
+                text-align: left;
+            }
+            &:nth-child(2) {
+                color: $bright_blue;
+            }
+            &:nth-child(4),
+            &:nth-child(5) {
+                width: 60px;
+            }
+            &:nth-child(6) {
+                width: 300px;
+                font-weight: 700;
+                color: $black;
+            }
+            &:nth-child(7) {
+                width: 250px;
+                text-align: right;
+            }
+        }
+    }
 }

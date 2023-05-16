@@ -11,13 +11,17 @@
 
 body {
     background-color: $gray_01;
-
 }
 
 .App {
     h1 {
         font-size: 40;
         font-weight: 400;
+    }
+    h2 {
+        font-size: 20;
+        font-weight: 400;
+        margin: 12px 0;
     }
     p {
         font-size: 16px;
