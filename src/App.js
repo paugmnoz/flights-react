@@ -2,6 +2,7 @@ import './App.css';
 import './variables.css'
 import Home from './Home/Home';
 import React from "react";
+import flights_json from './flights.json'
 import './App.css';
 
 const API_KEY = `${process.env.REACT_APP_FLIGHTS_API_KEY}`;
@@ -12,15 +13,19 @@ class App extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.state = {
-			DataisLoaded: true
+    console.log()
+    this.state = {
+			DataisLoaded: true,
+      flights_data: []
 		};
 
 	}
 
-	// ComponentDidMount is used to
-	// execute the code
 	componentDidMount() {
+    this.setState({
+      DataisLoaded: true,
+      flights_data: flights_json.data
+    })
 /*
 		fetch(
       "http ://api.aviationstack.com/v1/flights?access_key=" + `${API_KEY}`)
@@ -28,7 +33,8 @@ class App extends React.Component {
       .then(console.log)
 			.then((json) => {
 				this.setState({
-					DataisLoaded: true
+					DataisLoaded: true;
+          data: json
 				});
 			})*/
 
@@ -40,7 +46,7 @@ class App extends React.Component {
 
 		return (
 		<div className = "App">
-			<Home></Home>
+			<Home key={1} flight_data = {this.state.flights_data}></Home>
 		</div>
 	);
 }
