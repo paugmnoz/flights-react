@@ -1,6 +1,7 @@
 import React from 'react';
 import DepartureItem from './DepartureItem';
 import './Home.css';
+import Header from './Header';
 
 
 export default class Home extends React.Component {
@@ -14,7 +15,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <div>
-                <h1>Welcome to Track your flight</h1>
+                <Header></Header>
                 <ul>
                     {
                         this.state.data.map((flight) => {

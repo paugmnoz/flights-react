@@ -1,1 +1,8 @@
-/*# sourceMappingURL=Home.css.map */
+.home_header {
+  background-color: #131633;
+  color: #ffffff;
+  height: 200px;
+}
+.home_header p {
+  color: #8C85B4;
+}/*# sourceMappingURL=Home.css.map */

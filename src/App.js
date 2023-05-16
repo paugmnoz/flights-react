@@ -1,9 +1,7 @@
 import './App.css';
-import './variables.css'
 import Home from './Home/Home';
 import React from "react";
 import flights_json from './flights.json'
-import './App.css';
 
 const API_KEY = `${process.env.REACT_APP_FLIGHTS_API_KEY}`;
 
