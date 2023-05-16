@@ -26,7 +26,7 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 20px 40px 0 40px;
+  padding: 20px 40px 80px 40px;
 }
 .home_content .search_bar {
   display: flex;
@@ -41,6 +41,7 @@ ul {
   width: 80%;
   border-radius: 6px;
   overflow: hidden;
+  border: 1px solid #DFE4FB;
 }
 ul .listHeader {
   width: 100%;
@@ -48,7 +49,6 @@ ul .listHeader {
   flex-direction: row;
   justify-content: space-between;
   padding: 14px 28px;
-  border: 1px solid #DFE4FB;
   background-color: #DFE4FB;
 }
 ul .listHeader p {
@@ -75,7 +75,7 @@ ul .departureItem {
   flex-direction: row;
   justify-content: space-between;
   padding: 14px 28px;
-  border: 1px solid #DFE4FB;
+  border-bottom: 1px solid #DFE4FB;
   background-color: #ffffff;
 }
 ul .departureItem:hover {
@@ -106,4 +106,7 @@ ul .departureItem p:nth-child(6) {
 ul .departureItem p:nth-child(7) {
   width: 250px;
   text-align: right;
+}
+ul .departureItem:last-child {
+  border-bottom: 0 solid;
 }/*# sourceMappingURL=Home.css.map */
