@@ -6,13 +6,6 @@ export default class Home extends React.Component {
         super(props);
         this.state = {
             data: this.props.flight_data,
-            depart: '',
-            number: '',
-            status: '',
-            terminal: '',
-            gate: '',
-            arriving_at: '',
-            arrival_date: ''
         };
     }
 
