@@ -28,22 +28,32 @@ class App extends React.Component {
 
 
 		/*
-				fetch(
-			  "http ://api.aviationstack.com/v1/flights?access_key=" + `${API_KEY}`)
-					.then((res) => res.json())
-			  .then(console.log)
-					.then((json) => {
-						this.setState({
-							DataisLoaded: true;
-				  data: json
-						});
-					})*/
+		fetch(
+			"http ://api.aviationstack.com/v1/flights?access_key=" + `${API_KEY}`)
+			.then((res) => res.json())
+			.then(console.log)
+			.then((json) => {
+				this.setState({
+					flights_data: json,
+				});
+			})
+
+		fetch(
+			"http ://api.aviationstack.com/v1/airports?access_key=" + `${API_KEY}`)
+			.then((res) => res.json())
+			.then(console.log)
+			.then((json) => {
+				this.setState({
+					DataisLoaded: true,
+					airports_data: json,
+				});
+			}) */
+
 
 	}
 	render() {
 		const { DataisLoaded, flights_data } = this.state;
 
-		console.log('app' + typeof (flights_data))
 		if (flights_data.length === 0) return <div>
 			<h1> Please wait some time.... </h1> </div>;
 
